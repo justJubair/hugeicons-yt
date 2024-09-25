@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: #f6f6f6;
+  font-family: "Inter", sans-serif;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.ai-video {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon h3 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.home-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  padding: 10px 12px;
+}
+.ai-tools-container {
+  width: 272px;
+  height: 280px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+ul {
+  margin-top: 10px;
+}
+ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+}
+
+.ai-tools-container h3 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.others-container {
+  width: 272px;
+  height: 192px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 16px;
+}
+.others-container h3 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.user-container {
+  width: 272px;
+  height: 126px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.user-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copyright-text h4 {
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* .user-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+} */
+.primary-card {
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 10px;
+  transition: all 1s ease;
+}
+
+.primary-card h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.primary-card h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.new-badge {
+  background-color: #111827;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.sidebar {
+  height: 100vh;
+  width: 76px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 16px;
+  padding-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.primary-card p {
+  display: none;
+  opacity: 0;
+}
+.primary-card h3 {
+  display: none;
+}
+.primary-card h2 {
+  display: none;
+}
+.copyright-text h4 {
+  display: none;
+}
+.user-box svg {
+  display: none;
+}
+.user-icon p {
+  display: none;
+}
+
+span {
+  display: none;
+}
+.logo-side-icon {
+  display: none;
+}
+.user-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+/* hover animation css */
+.sidebar:hover {
+  width: 272px;
+}
+
+.sidebar:hover .primary-card p {
+  display: block;
+  opacity: 1;
+}
+.sidebar:hover .primary-card h3 {
+  display: block;
+}
+.sidebar:hover .primary-card h2 {
+  display: block;
+}
+.sidebar:hover .logo-side-icon {
+  display: block;
+}
+.sidebar:hover .copyright-text h4 {
+  display: block;
+}
+
+.sidebar:hover .user-box svg {
+  display: block;
+}
+.sidebar:hover .user-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sidebar:hover .user-icon p {
+  display: block;
+}
+
+.sidebar:hover span {
+  display: block;
+}
+.sidebar:hover .logo-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
