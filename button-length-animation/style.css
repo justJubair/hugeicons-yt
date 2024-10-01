@@ -18,52 +18,51 @@ body {
 .button {
   width: 200px;
   height: 50px;
-  background-color: black;
-  position: relative;
+  background-color: rgba(1, 20, 9, 0.88);
   color: white;
   display: flex;
-  gap: 10px;
   align-items: center;
-  text-transform: uppercase;
   justify-content: center;
+  gap: 10px;
   cursor: pointer;
+  position: relative;
   transition: all 0.5s ease-in-out;
   &:hover {
     box-shadow: 2px 2px 25px 5px rgba(241, 238, 238, 0.181);
   }
 }
 
-.button:before {
+.button::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 0;
   height: 0;
+  top: 0;
+  left: 0;
   border-top: 2px solid #b3e380;
   border-right: 2px solid #b3e380;
-  animation: border-top-right 3s infinite alternate;
+  animation: border-top-right 2s infinite alternate;
 }
 
-.button:after {
+.button::after {
   content: "";
   position: absolute;
-  right: 0;
-  bottom: 0;
   width: 0;
   height: 0;
+  bottom: 0;
+  right: 0;
   border-bottom: 2px solid #b3e380;
   border-left: 2px solid #b3e380;
-  animation: border-bottom-left 3s infinite alternate;
+  animation: border-bottom-left 2s infinite alternate;
 }
 @keyframes border-top-right {
   0% {
     width: 0;
-    height: 0px;
+    height: 0;
   }
   25% {
     width: 200px;
-    height: 0px;
+    height: 0;
   }
   50% {
     width: 200px;
@@ -77,18 +76,17 @@ body {
 @keyframes border-bottom-left {
   0% {
     width: 0;
-    height: 0px;
+    height: 0;
     opacity: 0;
   }
   50% {
     width: 0px;
-    height: 0px;
+    height: 0;
     opacity: 0;
   }
-
   75% {
     width: 200px;
-    height: 0px;
+    height: 0;
     opacity: 1;
   }
   100% {
