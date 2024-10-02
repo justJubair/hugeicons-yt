@@ -1,0 +1,68 @@
+#card-one,
+#card-two,
+#card-three {
+  position: absolute;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#card-one {
+  animation-name: card-one;
+}
+
+#card-two {
+  animation-name: card-two;
+}
+
+#card-three {
+  animation-name: card-three;
+}
+
+@keyframes card-one {
+  0%,
+  15%,
+  33.33% {
+    top: 15%;
+  }
+  24% {
+    top: -90%;
+  }
+  33.34%,
+  100% {
+    top: 15%;
+  }
+}
+
+@keyframes card-two {
+  0%,
+  33.33%,
+  48.33%,
+  66.67% {
+    top: 10%;
+  }
+  57.33% {
+    top: -90%;
+  }
+  66.68%,
+  100% {
+    top: 10%;
+  }
+}
+
+@keyframes card-three {
+  0%,
+  66.67%,
+  81.67% {
+    top: 5%;
+    z-index: 8;
+  }
+  90.67% {
+    top: -90%;
+    z-index: -8;
+  }
+  100% {
+    top: 5%;
+    z-index: -8;
+  }
+}
