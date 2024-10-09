@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("/assets/georgia.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  font-family: "Georgia";
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d1cfcf;
+}
+
+.menu-card {
+  background-color: #0d0e19;
+  transition: all 0.2s ease-in;
+}
+
+.menu-card:hover {
+  box-shadow: #fc6e2e 8px 8px;
+  transform: translateX(-8px) translateY(-8px);
+  cursor: pointer;
+}
